@@ -1,0 +1,46 @@
+site_name: StarDeception lore
+site_url: https://soon.com
+
+repo_name: StarDeception/Lore
+repo_url: 'https://github.com/StarDeception/Lore'
+
+nav:
+  - Home: index.md
+  - Test:
+    - test/index.md
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      baselevel: 1
+      toc_depth: 5
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist
+  - attr_list
+  - footnotes
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+theme:
+  name: material
+  features:
+    - navigation.top
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - content.code.annotate # (1)
+    - content.code.copy
+    - content.action.edit
+  logo: assets/favicon.png
+  favicon: assets/favicon.png
+
+extra_css:
+  - stylesheets/extra.css
